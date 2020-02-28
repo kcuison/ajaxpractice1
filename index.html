@@ -28,11 +28,11 @@
         var req = new XMLHttpRequest();
         req.onreadystatechange = function() {
           if(this.readyState == 4 && this.status == 200) {
-            document.getElementID("demo"). innerHTML =
+            document.getElementById("demo").innerHTML =
             this.responseText;
           }
         }
-        req.open("GIT"."name.txt".true);
+        req.open("GET","weather.txt",true);
         req.send();
       }
     </script>
